@@ -1,18 +1,20 @@
-import { useState } from 'react'
 
-
+import Navbar from './Components/Navbar'
 import './App.css'
-import { Navbar } from './Components/Navbar.jsx'
+import Mapfunction from './Components/Mapfunction';
+import Map1 from './Components/Map1';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
- 
-<Navbar title="Homes" />
-</>
-  )
+    <>
+    <Navbar title="Homes" AboutText="About Us" />
+    <Navbar/>
+    <Mapfunction/>
+   <Map1/>
+   
+
+    </>
+  );
 }
 
-export default App
+export default App;
